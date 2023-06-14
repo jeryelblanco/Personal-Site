@@ -16,7 +16,7 @@ def root_page():
         'Welcome to my database', 200
     )
 
-@app.route('/blogs', methods = ["GET", "POST", "DELETE"])
+@app.route('/blogs', methods = ["GET", "POST"])
 def my_blogs():
     if request.method == 'GET':
         blog_list = [this.to_dict() for this in Blogs.query.all()]
