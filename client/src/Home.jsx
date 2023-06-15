@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation"
 import { useHistory } from "react-router-dom"
 import pdf from './assets/myresume.pdf'
-import image from './assets/myimg.JPG'
+// import image from './assets/myimg.JPG'
 
 function Home(){
 
