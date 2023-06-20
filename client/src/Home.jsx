@@ -50,6 +50,7 @@ return (
     <h4>Follow me on LinkedIn</h4><br></br>
     <a href = "https://www.linkedin.com/in/jeryel-blanco-ba10a3199"><img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" alt = "linkedin"></img></a>
 </footer>
+
 </div>
 )
 }
