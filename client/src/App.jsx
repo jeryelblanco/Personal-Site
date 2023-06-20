@@ -21,10 +21,6 @@ function App() {
       <Switch>
       <Route exact path = "/">
         <Home/>
-        <footer id = "footer">
-    <h4>Follow me on LinkedIn</h4><br></br>
-    <a href = "https://www.linkedin.com/in/jeryel-blanco-ba10a3199"><img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" alt = "linkedin"></img></a>
-</footer>
       </Route>
       <Route exact path = "/blogs">
       <Blogs/>

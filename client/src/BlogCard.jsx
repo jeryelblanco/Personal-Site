@@ -2,6 +2,9 @@ import placeholder from './assets/placeholder-image.png'
 import { useState } from 'react'
 function BlogCard(){
 const [isClicked, setClick] = useState(true)
+
+
+// Created a function to change the boolean state to collpase and expand details
 function isClick(){
 setClick(!isClicked)
 }

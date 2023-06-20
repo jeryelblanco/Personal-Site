@@ -2,7 +2,7 @@
 function NewBlog({setShow}){
 
 
-
+// New Blog form
 return(
 <form onSubmit={setShow}>
 <label for = "title">Title:</label><br></br>

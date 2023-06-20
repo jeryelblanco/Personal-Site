@@ -5,11 +5,12 @@ import { useState } from "react"
 function Blogs(){
 const [show, setShow] = useState(true)
 
+// Function to toggle submission form on and off
 function toggleDisplay(){
 setShow(!show)
 }
 
-
+// This is where I fetch my backend 
 const arr = [0, 1, 2, 3]
 const blogcards = arr.map(comp => {
 return <BlogCard/>
