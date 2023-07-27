@@ -39,7 +39,7 @@ return (
 
 <div id = "about">
    <h4 style={{cursor: "pointer"}} onClick = {redirect}>About Me</h4> 
-   <p>Being born in New York City, one is forced to be ambitious and persevering. Started my college education as an Electrical Engineer, then as a self taught Music Producer and Audio Engineer I decided to major in Music Production, then finally to fullfill my desire to be challenged and love what I do, studied Computer Science & Information Security. Now I have found my home as a Full Stack Developer.</p>
+   <p>Being born in New York City, one is forced to be ambitious and persevering. I am a highly motivated Fullstack developer experienced in the Python-Flask stack using React for frontend.</p>
     </div>
 <div id = "resume">
 <h4>My Resume</h4>

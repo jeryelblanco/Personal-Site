@@ -1,8 +1,10 @@
 from flask import Flask, make_response, request, jsonify
 from flask_migrate import Migrate
 from models import db, Blogs
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blogs.db'
 app.config['SQLALCHEMY_TRACK_NODIFICATIONS'] = False
 

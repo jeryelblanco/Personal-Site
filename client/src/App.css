@@ -156,6 +156,9 @@ height: 15vh;
   width: 100px;
   height: 100px;
 }
+
+
+/* creating border line under each blog card*/
 #individualcard{
   
   width: fit-content;
