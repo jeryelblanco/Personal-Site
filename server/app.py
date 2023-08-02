@@ -58,7 +58,7 @@ def blog_by_id(id):
         db.session.delete(blog_query)
         db.session.commit()
         return make_response(
-        jsonify({f"Blog with title of {blog_query.title} and id of: {id_data}": "has been deleted"})
+        jsonify(blog_query.to_dict())
         )
     pass
         

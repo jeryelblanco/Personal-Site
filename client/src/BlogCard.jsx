@@ -1,6 +1,6 @@
 import placeholder from './assets/placeholder-image.png'
 import { useState} from 'react'
-function BlogCard({blogData}){
+function BlogCard({blogData, filterArray}){
 const [isClicked, setClick] = useState(true)
 const [isDelete, setDelete] = useState(false)
 const [dropdown, setDropDown] = useState('')
@@ -11,7 +11,21 @@ setClick(!isClicked)
 }
 
 if(dropdown === 'delete'){
-alert('are you sure you want to delete?')
+if (confirm('are you sure you want to delete?') === true){
+fetch(`http://127.0.0.1:5555/blogs/${blogData.id}`, {
+method: "DELETE"
+})
+.then(
+    // setBlog(
+    // blogArray.filter(value => {
+    // return blogData.id !== value.id
+    // })
+    // )
+response => response.json()
+)
+.then(data => filterArray(data))
+
+}
 }
 
 

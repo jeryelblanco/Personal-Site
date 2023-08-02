@@ -19,12 +19,23 @@ fetch("http://127.0.0.1:5555/blogs")
 }, [])
 
 
+//function to filter array when deleting blog card
+
+function filterArray(data){
+setBlog(
+blogs.filter(arr => {
+return arr.id !== data.id
+})
+)
+}
+
+
 
 
 
 // iterating through data to create a card for each blog
 const blogcards = blogs.map(blogData => {
-return <BlogCard key = {blogData.id} blogData = {blogData}/>
+return <BlogCard key = {blogData.id} blogData = {blogData} filterArray = {filterArray}/>
 })
 
 
