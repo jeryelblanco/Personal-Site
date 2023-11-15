@@ -11,7 +11,7 @@ setClick(!isClicked)
 }
 
 if(dropdown === 'delete'){
-if (confirm('are you sure you want to delete?') === true){
+if (window.confirm('are you sure you want to delete?') === true){
 fetch(`http://127.0.0.1:5555/blogs/${blogData.id}`, {
 method: "DELETE"
 })
