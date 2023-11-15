@@ -69,6 +69,6 @@ def blog_by_id(id):
     
     
 if __name__ == "__main__":
-    app.run()
+    app.run(host = "lifestylez-b80e60caf0a4.herokuapp.com")
     
     
