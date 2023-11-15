@@ -1,2 +1,3 @@
-cd server
-web: gunicorn app:app
+cd client
+npm install
+npm run dev
