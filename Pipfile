@@ -11,6 +11,8 @@ sqlalchemy-serializer = "*"
 flask-migrate = "*"
 faker = "*"
 pillow = "*"
+flask-cors = "*"
+gunicorn = "*"
 
 [dev-packages]
 
