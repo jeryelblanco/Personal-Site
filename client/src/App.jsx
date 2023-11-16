@@ -14,6 +14,14 @@ function App() {
   //   document.getElementById('content').style.opacity = 1
   //   }
   // setTimeout(mouseOver, 5000)
+
+
+  /*
+  NOTES:
+  For next time try to fix path when search for website.com/blogsection.
+  The issue now is that refershing blogs tab return 404 error.
+
+  */
   
   return (
     <div className="App">
@@ -23,7 +31,7 @@ function App() {
       <Route exact path = "/">
         <Home/>
       </Route>
-      <Route exact path = "/blogs">
+      <Route exact path = "/blogsection">
       <Blogs/>
       </Route>
       <Route exact path = "/about">

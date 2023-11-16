@@ -12,7 +12,7 @@ setClick(!isClicked)
 
 if(dropdown === 'delete'){
 if (window.confirm('are you sure you want to delete?') === true){
-fetch(`http://127.0.0.1:5555/blogs/${blogData.id}`, {
+fetch(`https://lifestylez-0939f11feba5.herokuapp.com/blogs/${blogData.id}`, {
 method: "DELETE"
 })
 .then(

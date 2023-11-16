@@ -13,7 +13,7 @@ setShow(!show)
 
 //fetching data from backend
 useEffect(()=>{
-fetch("http://127.0.0.1:5555/blogs")
+fetch("https://lifestylez-0939f11feba5.herokuapp.com/blogs")
 .then(response => response.json())
 .then(data => setBlog(data))
 }, [])
@@ -29,6 +29,13 @@ return arr.id !== data.id
 )
 }
 
+//function to add a the new blog to list
+function addBlog(data){
+setBlog(
+[...blogs, data]
+)
+}
+
 
 
 
@@ -40,6 +47,7 @@ return <BlogCard key = {blogData.id} blogData = {blogData} filterArray = {filter
 
 
 
+
 return (
 
 <div className="blogs">
@@ -48,7 +56,7 @@ show?
 <h2 onClick = {toggleDisplay} style={{cursor: "pointer", borderBottomStyle: "outset", borderBottomWidth: "5px"}}>Submit a new blog!</h2>
 :
 <>
-<NewBlog setShow = {setShow}/>
+<NewBlog setShow = {setShow} addBlog = {addBlog}/>
 </>
 }
 {blogcards}

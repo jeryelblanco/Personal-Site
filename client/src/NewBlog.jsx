@@ -1,14 +1,14 @@
 import {useState} from 'react'
 
 
-function NewBlog({setShow}){
+function NewBlog({setShow, addBlog}){
 const [inputTitle, setTitle] = useState('')
 const [inputImage, setImage] = useState('')
 const [inputText, setText] = useState('')
     
 
 function handleSubmit(){
-fetch("http://127.0.0.1:5555/blogs", {
+fetch("https://lifestylez-0939f11feba5.herokuapp.com/blogs", {
 method: "POST",
 headers: {
 'Content-Type' : 'application/json'
@@ -19,6 +19,8 @@ image: inputImage,
 text: inputText
 })
 })
+.then(response => response.json())
+.then(data => addBlog(data))
 }
 
 // New Blog form
